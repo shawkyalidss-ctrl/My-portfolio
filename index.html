@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المهندس شوقي المير | مهندس تحليل بيانات وذكاء الأعمال</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="الموقع التعريفي ومعرض الأعمال الشخصي للمهندس شوقي المير - متخصص في تحليل البيانات، ذكاء الأعمال (Power BI)، استخراج الأنماط، وتعلم الآلة.">
+  <meta name="keywords" content="شوقي المير, تحليل البيانات, Data Analyst, Power BI, Python, SQL, Machine Learning, Portfolio, جامعة, مشاريع تخرج">
+  <meta name="author" content="المهندس شوقي المير">
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" id="bootstrap-css">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Google Fonts: Cairo & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
+
+  <!-- ========================================================================
+       Navigation Bar
+       ======================================================================== -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home" id="navBrand">
+        <div class="brand-icon">
+          <i class="bi bi-bar-chart-fill"></i>
+        </div>
+        <div>
+          <span class="gradient-text fw-bold" id="brandTitle">م. شوقي المير</span>
+          <small class="d-block text-muted" style="font-size: 0.72rem; font-weight: 500;" id="brandSubtitle">تحليل البيانات & BI</small>
+        </div>
+      </a>
+
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler border-0 shadow-none text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="تبديل القائمة">
+        <i class="bi bi-list fs-1 text-info"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" id="linkHome"><i class="bi bi-house-door me-1"></i> الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" id="linkAbout"><i class="bi bi-person me-1"></i> من أنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education" id="linkEdu"><i class="bi bi-mortarboard me-1"></i> التعليم</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" id="linkSkills"><i class="bi bi-tools me-1"></i> المهارات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects" id="linkProjects"><i class="bi bi-folder-check me-1"></i> المشاريع</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificates" id="linkCerts"><i class="bi bi-patch-check me-1"></i> الشهادات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" id="linkContact"><i class="bi bi-envelope me-1"></i> اتصل بي</a>
+          </li>
+        </ul>
+
+        <!-- Navigation Controls: Theme Toggle & Language Switcher -->
+        <div class="nav-controls mt-3 mt-lg-0">
+          <!-- Theme Toggle Button -->
+          <button class="control-btn" id="themeToggleBtn" title="تبديل المظهر الداكن/الفاتح" aria-label="تبديل الوضع">
+            <i class="bi bi-sun-fill" id="themeIcon"></i>
+          </button>
+          
+          <!-- Language Toggle Button -->
+          <button class="control-btn" id="langToggleBtn" title="Switch to English" aria-label="تبديل اللغة">
+            <span class="fw-bold" style="font-size: 0.85rem;" id="langText">EN</span>
+          </button>
+
+          <!-- Contact CTA Button -->
+          <a href="#contact" class="btn btn-primary-custom d-none d-xl-inline-flex py-2 px-3" style="font-size: 0.88rem;" id="navCta">
+            <i class="bi bi-send-fill"></i> تواصل معي
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ========================================================================
+         Hero Section
+         ======================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+
+      <div class="container hero-content">
+        <div class="row align-items-center g-5">
+          <!-- Text Content -->
+          <div class="col-lg-7 text-center text-lg-start">
+            <div class="status-badge" id="heroStatusBadge">
+              <span class="pulse-dot"></span>
+              <span id="heroStatusText">متاح للفرص والمشاريع الأكاديمية والعمل الحر</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span id="heroWelcome">مرحباً، أنا</span><br>
+              <span class="gradient-text" id="heroName">المهندس شوقي المير</span>
+            </h1>
+
+            <div class="hero-subtitle">
+              <i class="bi bi-terminal text-info"></i>
+              <span id="heroJobTitle">مهندس تحليل بيانات | Data Analyst & BI Specialist</span>
+            </div>
+
+            <p class="hero-desc" id="heroDescription">
+              طالب جامعي شغوف بعلوم البيانات والذكاء الاصطناعي، متخصص في تحويل البيانات الأولية والمعقدة إلى رؤى استراتيجية ولوحات تحكم تفاعلية تدعم اتخاذ القرار وتصنع الفارق في بيئة الأعمال.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn-primary-custom" id="btnViewProjects">
+                <i class="bi bi-grid-fill"></i> استعراض مشاريعي
+              </a>
+              <a href="assets/cv.pdf" class="btn-outline-custom" download id="btnDownloadCv">
+                <i class="bi bi-file-earmark-arrow-down-fill text-info"></i> تحميل السيرة الذاتية (CV)
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <span class="text-muted small me-2" id="socialsLabel">تواصل معي:</span>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://kaggle.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="Kaggle" aria-label="Kaggle">
+                <i class="bi bi-database-check"></i>
+              </a>
+              <a href="mailto:your-email@example.com" class="social-icon" title="البريد الإلكتروني" aria-label="Email">
+                <i class="bi bi-envelope-at-fill"></i>
+              </a>
+              <a href="https://wa.me/20XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="social-icon" title="WhatsApp" aria-label="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Image & Stat Badges -->
+          <div class="col-lg-5 text-center">
+            <div class="hero-image-wrapper">
+              <!-- Floating Badge 1 -->
+              <div class="floating-badge badge-top-left" id="badgeExperience">
+                <div class="badge-icon bi-data">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <div class="badge-info text-start">
+                  <h5>+15</h5>
+                  <p id="badgeExpText">مشروع تحليلي منجز</p>
+                </div>
+              </div>
+
+              <!-- Main Profile Image Container -->
+              <div class="profile-card-container">
+                <img src="assets/images/profile.jpg" alt="المهندس شوقي المير - محلل بيانات" class="profile-img" id="heroProfileImg">
+              </div>
+
+              <!-- Floating Badge 2 -->
+              <div class="floating-badge badge-bottom-right" id="badgeSpecialty">
+                <div class="badge-icon bi-code">
+                  <i class="bi bi-pie-chart-fill"></i>
+                </div>
+                <div class="badge-info text-start">
+                  <h5>BI</h5>
+                  <p id="badgeSpecText">تحليل البيانات وذكاء الأعمال</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         About Me Section
+         ======================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-title">
+          <span class="badge-tag" id="aboutBadge"><i class="bi bi-person-badge"></i> نبذة تعريفية</span>
+          <h2 id="aboutTitle">من هو <span class="gradient-text">المهندس شوقي المير</span>؟</h2>
+          <p class="subtitle" id="aboutSubtitle">شغف عميق بالأرقام، وتحويل البيانات الصامتة إلى قرارات استثمارية وتشغيلية ناجحة</p>
+        </div>
+
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <div class="glass-card p-3">
+              <img src="assets/images/banner.jpg" alt="بيئة عمل تحليل البيانات وتطوير الويب" class="about-banner-img">
+              <div class="p-2">
+                <div class="about-highlight-box" id="aboutQuoteBox">
+                  <i class="bi bi-quote fs-3 text-info"></i>
+                  <p class="fw-semibold mb-0" id="aboutQuoteText">
+                    "البيانات بدون تحليل هي مجرد أرقام، والتحليل بدون سرد قصصي بصري لا يغير واقع الأعمال."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-text">
+              <p id="aboutP1">
+                أنا <strong>شوقي المير</strong>، طالب في السنة النهائية بتخصص <strong>علوم الحاسب ونظم المعلومات مع التركيز الأكاديمي والعملي على تحليل البيانات ونظم ذكاء الأعمال (Business Intelligence)</strong>. أمتلك خلفية تقنية متينة تجمع بين لغات البرمجة الحديثة مثل Python و SQL، وأدوات التصور المتقدمة مثل Power BI و Tableau.
+              </p>
+              <p id="aboutP2">
+                خلال مسيرتي الدراسية ومشاريعي العملية، ركزت على بناء نماذج تنبؤية تعالج تحديات واقعية: مثل التنبؤ بتسرب العملاء، وتحليل سلة المشتريات، وبناء لوحات تحكم للمبيعات ومؤشرات الأداء الرئيسية (KPIs). أسعى دائماً إلى الجمع بين الدقة الإحصائية وسهولة استخدام الواجهات.
+              </p>
+
+              <!-- Personal Attributes List -->
+              <div class="row g-3 my-2">
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-info"></i>
+                    <span class="fw-bold" id="infoMajorLabel">التخصص:</span>
+                    <span class="text-muted" id="infoMajorVal">تحليل البيانات ونظم المعلومات</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-info"></i>
+                    <span class="fw-bold" id="infoDegreeLabel">الدرجة:</span>
+                    <span class="text-muted" id="infoDegreeVal">بكالوريوس (قيد التخرج)</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-info"></i>
+                    <span class="fw-bold" id="infoEmailLabel">البريد:</span>
+                    <span class="text-muted">your-email@example.com</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-info"></i>
+                    <span class="fw-bold" id="infoStatusLabel">الحالة:</span>
+                    <span class="text-emerald text-success fw-bold" id="infoStatusVal">متاح للتعاون والتوظيف</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stat Counters Grid -->
+              <div class="row g-3 mt-4">
+                <div class="col-6 col-md-3">
+                  <div class="stat-counter-card">
+                    <div class="stat-number">+15</div>
+                    <div class="stat-label" id="statProjects">مشروع منجز</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="stat-counter-card">
+                    <div class="stat-number">+3</div>
+                    <div class="stat-label" id="statYears">سنوات دراسة وتطبيق</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="stat-counter-card">
+                    <div class="stat-number">+5</div>
+                    <div class="stat-label" id="statCerts">شهادات معتمدة</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="stat-counter-card">
+                    <div class="stat-number">3.88</div>
+                    <div class="stat-label" id="statGpa">المعدل التراكمي / 4.0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Education Section
+         ======================================================================== -->
+    <section class="education-section" id="education">
+      <div class="container">
+        <div class="section-title">
+          <span class="badge-tag" id="eduBadge"><i class="bi bi-mortarboard-fill"></i> المسيرة الأكاديمية</span>
+          <h2 id="eduTitle">التعليم و<span class="gradient-text">المؤهلات الدراسية</span></h2>
+          <p class="subtitle" id="eduSubtitle">سجل أكاديمي متميز يرتكز على علوم الحاسب، الإحصاء، والذكاء الاصطناعي</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="timeline">
+              <!-- Education Item 1 -->
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="bi bi-mortarboard"></i>
+                </div>
+                <div class="glass-card timeline-card">
+                  <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                    <span class="timeline-badge" id="edu1Period">2022 - 2026 (متوقع التخرج)</span>
+                    <span class="timeline-gpa-badge">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <span id="edu1Gpa">المعدل: 3.88 من 4.00 (مرتبة الشرف)</span>
+                    </span>
+                  </div>
+                  <h4 class="fw-bold mb-1" id="edu1Degree">بكالوريوس علوم الحاسب - تخصص تحليل البيانات والذكاء الاصطناعي</h4>
+                  <h6 class="text-info mb-3" id="edu1School">كلية علوم الحاسب والمعلومات - الجامعة التكنولوجية</h6>
+                  <p class="text-muted mb-3" id="edu1Desc">
+                    دراسة معمقة للمقررات التأسيسية والمتقدمة في تنقيب البيانات (Data Mining)، هياكل البيانات والخوارزميات، نظم إدارة قواعد البيانات العلائقية وغير العلائقية، التعلم الآلي، الإحصاء الرياضي والاحتمالات، وهندسة البرمجيات.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-secondary-subtle text-secondary-emphasis" id="edu1Course1">تنقيب البيانات واستخراج المعرفة</span>
+                    <span class="badge bg-secondary-subtle text-secondary-emphasis" id="edu1Course2">مستودعات البيانات وذكاء الأعمال</span>
+                    <span class="badge bg-secondary-subtle text-secondary-emphasis" id="edu1Course3">الإحصاء التطبيقي ونمذجة الانحدار</span>
+                    <span class="badge bg-secondary-subtle text-secondary-emphasis" id="edu1Course4">هندسة قواعد البيانات المتقدمة</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education Item 2 -->
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="bi bi-award"></i>
+                </div>
+                <div class="glass-card timeline-card">
+                  <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                    <span class="timeline-badge" id="edu2Period">2019 - 2022</span>
+                    <span class="timeline-gpa-badge">
+                      <i class="bi bi-trophy-fill text-warning"></i>
+                      <span id="edu2Gpa">النسبة: 98.5% (امتياز مع مرتبة الشرف)</span>
+                    </span>
+                  </div>
+                  <h4 class="fw-bold mb-1" id="edu2Degree">شهادة الثانوية العامة - المسار العلمي والرياضي</h4>
+                  <h6 class="text-info mb-3" id="edu2School">مدارس المتفوقين الثانوية</h6>
+                  <p class="text-muted mb-0" id="edu2Desc">
+                    تخرج بتفوق بالتركيز على مواد الرياضيات والفيزياء المتقدمة وتطبيقات الحاسب الآلي، مع الحصول على جوائز تقديرية في مسابقات الأولمبياد العلمي للرياضيات والبرمجة.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Skills Section
+         ======================================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-title">
+          <span class="badge-tag" id="skillsBadge"><i class="bi bi-cpu-fill"></i> القدرات التقنية</span>
+          <h2 id="skillsTitle">المهارات و<span class="gradient-text">الكفاءات المهنية</span></h2>
+          <p class="subtitle" id="skillsSubtitle">مجموعة متكاملة من الأدوات البرمجية، التحليلية، والمهارات الشخصية الموجهة للأعمال</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Category 1: Programming & Querying -->
+          <div class="col-lg-6">
+            <div class="glass-card skill-category-card">
+              <div class="skill-category-header">
+                <div class="category-icon bg-primary-subtle text-primary">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <div>
+                  <h4 class="fw-bold mb-0" id="skillCat1Title">لغات البرمجة والاستعلام</h4>
+                  <small class="text-muted" id="skillCat1Sub">Programming & Query Languages</small>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="skill-progress-item">
+                <div class="skill-info">
+                  <span>Python (Pandas, NumPy, Scikit-learn, Seaborn)</span>
+                  <span class="text-info fw-bold">95%</span>
+                </div>
+                <div class="progress-custom">
+                  <div class="progress-bar-fill" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="skill-progress-item">
+                <div class="skill-info">
+                  <span>SQL (PostgreSQL, MySQL, T-SQL, Complex Joins, CTEs)</span>
+                  <span class="text-info fw-bold">92%</span>
+                </div>
+                <div class="progress-custom">
+                  <div class="progress-bar-fill" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="skill-progress-item">
+                <div class="skill-info">
+                  <span>R Language (Statistical Inference & Data Wrangling)</span>
+                  <span class="text-info fw-bold">82%</span>
+                </div>
+                <div class="progress-custom">
+                  <div class="progress-bar-fill" style="width: 82%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="skill-progress-item">
+                <div class="skill-info">
+                  <span>HTML5 & CSS3 (Web Portfolio & Dashboard Integrations)</span>
+                  <span class="text-info fw-bold">90%</span>
+                </div>
+                <div class="progress-custom">
+                  <div class="progress-bar-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Business Intelligence & Visualization -->
+          <div class="col-lg-6">
+            <div class="glass-card skill-category-card">
+              <div class="skill-category-header">
+                <div class="category-icon bg-info-subtle text-info">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <div>
+                  <h4 class="fw-bold mb-0" id="skillCat2Title">ذكاء الأعمال والتمثيل البياني</h4>
+                  <small class="text-muted" id="skillCat2Sub">BI & Data Visualization Tools</small>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="skill-progress-item">
+                <div class="skill-info">
+                  <span>Microsoft Power BI (DAX, Power Query, Data Modeling)</span>
+                  <span class="text-info fw-bold">95%</span>
+                </div>
+                <div class="progress-custom">
+                  <div class="progress-bar-fill" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="skill-progress-item">
+                <div class="skill-info">
+                  <span>Tableau Desktop (Dashboards & Interactive Stories)</span>
+                  <span class="text-info fw-bold">88%</span>
+                </div>
+                <div class="progress-custom">
+                  <div class="progress-bar-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="skill-progress-item">
+                <div class="skill-info">
+                  <span>Advanced Excel (Power Pivot, XLOOKUP, Macros & VBA)</span>
+                  <span class="text-info fw-bold">94%</span>
+                </div>
+                <div class="progress-custom">
+                  <div class="progress-bar-fill" style="width: 94%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="skill-progress-item">
+                <div class="skill-info">
+                  <span>Google Looker Studio & Executive Reporting</span>
+                  <span class="text-info fw-bold">85%</span>
+                </div>
+                <div class="progress-custom">
+                  <div class="progress-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Machine Learning & Modeling -->
+          <div class="col-lg-6">
+            <div class="glass-card skill-category-card">
+              <div class="skill-category-header">
+                <div class="category-icon bg-purple-subtle text-purple" style="color: var(--accent-purple);">
+                  <i class="bi bi-cpu"></i>
+                </div>
+                <div>
+                  <h4 class="fw-bold mb-0" id="skillCat3Title">تعلم الآلة والنمذجة التنبؤية</h4>
+                  <small class="text-muted" id="skillCat3Sub">Machine Learning & Predictive Modeling</small>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-info">
+                  <span>Supervised Learning (Regression, Classification, XGBoost)</span>
+                  <span class="text-info fw-bold">88%</span>
+                </div>
+                <div class="progress-custom">
+                  <div class="progress-bar-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-info">
+                  <span>Unsupervised Learning (K-Means Clustering, PCA, Apriori)</span>
+                  <span class="text-info fw-bold">85%</span>
+                </div>
+                <div class="progress-custom">
+                  <div class="progress-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress-item">
+                <div class="skill-info">
+                  <span>Data Cleaning & Feature Engineering Pipeline</span>
+                  <span class="text-info fw-bold">92%</span>
+                </div>
+                <div class="progress-custom">
+                  <div class="progress-bar-fill" style="width: 92%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Soft Skills & Business Mindset -->
+          <div class="col-lg-6">
+            <div class="glass-card skill-category-card">
+              <div class="skill-category-header">
+                <div class="category-icon bg-success-subtle text-success">
+                  <i class="bi bi-lightbulb-fill"></i>
+                </div>
+                <div>
+                  <h4 class="fw-bold mb-0" id="skillCat4Title">المهارات الشخصية والتحليلية</h4>
+                  <small class="text-muted" id="skillCat4Sub">Soft Skills & Analytical Acumen</small>
+                </div>
+              </div>
+
+              <p class="text-muted small mb-3" id="softSkillsDesc">
+                مهارات تواصل وقيادة مكنتني من تقديم شروحات وعروض تقديمية مبسطة للبيانات المعقدة للقيادات وأصحاب القرار:
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="soft-skill-badge"><i class="bi bi-journal-text text-info"></i> <span id="ss1">السرد القصصي للبيانات (Data Storytelling)</span></span>
+                <span class="soft-skill-badge"><i class="bi bi-bullseye text-danger"></i> <span id="ss2">التفكير النقدي والتحليلي المتقدم</span></span>
+                <span class="soft-skill-badge"><i class="bi bi-people-fill text-primary"></i> <span id="ss3">العمل الجماعي وفرق التطوير السريعة (Agile)</span></span>
+                <span class="soft-skill-badge"><i class="bi bi-briefcase-fill text-warning"></i> <span id="ss4">ربط مخرجات التحليل بأهداف الأعمال (KPIs)</span></span>
+                <span class="soft-skill-badge"><i class="bi bi-chat-dots-fill text-success"></i> <span id="ss5">التواصل الفعال وتقديم العروض التنفيذية</span></span>
+                <span class="soft-skill-badge"><i class="bi bi-clock-history text-info"></i> <span id="ss6">إدارة الوقت وتسليم المشاريع في الموعد</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Projects Section
+         ======================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-title">
+          <span class="badge-tag" id="projBadge"><i class="bi bi-kanban-fill"></i> معرض الأعمال</span>
+          <h2 id="projTitle">المشاريع و<span class="gradient-text">الأعمال السابقة</span></h2>
+          <p class="subtitle" id="projSubtitle">نماذج عملية تطبيقية تحاكي سيناريوهات واقعية في استخراج الرؤى وبناء لوحات التحكم</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filter-buttons">
+          <button class="filter-btn active" data-filter="all" id="filterAll">الكل (All)</button>
+          <button class="filter-btn" data-filter="dashboard" id="filterDashboards">لوحات التحكم (Dashboards)</button>
+          <button class="filter-btn" data-filter="machine-learning" id="filterMl">تعلم الآلة (ML Models)</button>
+          <button class="filter-btn" data-filter="eda" id="filterEda">تحليل استكشافي (EDA)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="row g-4" id="projectsContainer">
+          
+          <!-- Project 1: Sales Performance Dashboard -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="dashboard">
+            <div class="glass-card project-card">
+              <div class="project-thumb-container">
+                <img src="assets/images/project1.jpg" alt="لوحة تحكم أداء المبيعات" class="project-img">
+                <span class="project-category-overlay" id="p1CategoryTag">لوحة تحكم ذكية</span>
+              </div>
+              <div class="project-body">
+                <h4 class="project-title" id="p1Title">لوحة تحكم أداء المبيعات وسلوك العملاء الشاملة</h4>
+                <p class="project-desc" id="p1Desc">
+                  تصميم لوحة تفاعلية متكاملة عبر Power BI و SQL لمتابعة إيرادات سنوية تتجاوز 1.89 مليون دولار، مع تحليل القيمة الدائمة للعملاء ومعدلات النمو الربعي وتوزيع المبيعات الجغرافي.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Power BI</span>
+                  <span class="tech-tag">DAX</span>
+                  <span class="tech-tag">SQL Server</span>
+                  <span class="tech-tag">Data Modeling</span>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-sm btn-outline-info rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#projectModal1" id="p1BtnModal">
+                    <i class="bi bi-info-circle me-1"></i> تفاصيل المشروع
+                  </button>
+                  <a href="https://github.com/shawqi-almeer/sales-bi-dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary rounded-pill px-3" title="مستودع الكود">
+                    <i class="bi bi-github me-1"></i> كود المشروع
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Customer Churn ML Model -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="machine-learning">
+            <div class="glass-card project-card">
+              <div class="project-thumb-container">
+                <img src="assets/images/project2.jpg" alt="نموذج التنبؤ بتسرب العملاء" class="project-img">
+                <span class="project-category-overlay" id="p2CategoryTag">تعلم آلة تنبؤي</span>
+              </div>
+              <div class="project-body">
+                <h4 class="project-title" id="p2Title">نموذج التنبؤ بتسرب العملاء وخفض معدل الفقد</h4>
+                <p class="project-desc" id="p2Desc">
+                  تطوير نموذج تصنيف بالتعلم الآلي (XGBoost) بدقة 88.6% لتحديد العملاء المعرضين لإلغاء الاشتراك، واستخراج العوامل العشرة الأكثر تأثيراً على ولاء العملاء.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">XGBoost</span>
+                  <span class="tech-tag">Pandas</span>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-sm btn-outline-info rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#projectModal2" id="p2BtnModal">
+                    <i class="bi bi-info-circle me-1"></i> تفاصيل المشروع
+                  </button>
+                  <a href="https://github.com/shawqi-almeer/customer-churn-ml" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary rounded-pill px-3" title="مستودع الكود">
+                    <i class="bi bi-github me-1"></i> كود المشروع
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Healthcare EDA & Trends -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="eda">
+            <div class="glass-card project-card">
+              <div class="project-thumb-container">
+                <img src="assets/images/project3.jpg" alt="التحليل الإحصائي والاستكشافي للبيانات الصحية" class="project-img">
+                <span class="project-category-overlay" id="p3CategoryTag">تحليل بيانات استكشافي</span>
+              </div>
+              <div class="project-body">
+                <h4 class="project-title" id="p3Title">التحليل الإحصائي والاستكشافي للبيانات الصحية والوبائية</h4>
+                <p class="project-desc" id="p3Desc">
+                  تحليل استكشافي عميق لأكثر من 1.2 مليون سجل صحي سريري، يوضح العلاقة بين التغطية اللقاحية ومعدلات التنويم، مع خرائط حرارية عالمية ونماذج التنبؤ بالسلاسل الزمنية.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Seaborn</span>
+                  <span class="tech-tag">Time Series</span>
+                  <span class="tech-tag">Statistics</span>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-sm btn-outline-info rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#projectModal3" id="p3BtnModal">
+                    <i class="bi bi-info-circle me-1"></i> تفاصيل المشروع
+                  </button>
+                  <a href="https://github.com/shawqi-almeer/healthcare-eda-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary rounded-pill px-3" title="مستودع الكود">
+                    <i class="bi bi-github me-1"></i> كود المشروع
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Courses and Certifications Section
+         ======================================================================== -->
+    <section class="certs-section" id="certificates">
+      <div class="container">
+        <div class="section-title">
+          <span class="badge-tag" id="certsBadge"><i class="bi bi-award-fill"></i> التطوير المهني</span>
+          <h2 id="certsTitle">الدورات و<span class="gradient-text">الشهادات المعتمدة</span></h2>
+          <p class="subtitle" id="certsSubtitle">شهادات تخصصية موثوقة من كبرى المنصات والشركات العالمية الرائدة في التقنية</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Cert 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card cert-card">
+              <div class="cert-header">
+                <div class="cert-icon">
+                  <i class="bi bi-google"></i>
+                </div>
+                <div>
+                  <div class="cert-issuer">Google & Coursera</div>
+                  <h5 class="cert-title" id="cert1Title">Google Data Analytics Professional Certificate</h5>
+                </div>
+              </div>
+              <p class="text-muted small" id="cert1Desc">
+                برنامج مهني مكثف يشمل تنظيف البيانات، صياغة الاستعلامات بلغة SQL، التحليل الإحصائي، وإعداد الرسوم البيانية التفاعلية عبر Tableau.
+              </p>
+              <div class="cert-meta">
+                <span class="verified-badge"><i class="bi bi-patch-check-fill"></i> موثقة ومعتمدة</span>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card cert-card">
+              <div class="cert-icon-container cert-header">
+                <div class="cert-icon">
+                  <i class="bi bi-microsoft"></i>
+                </div>
+                <div>
+                  <div class="cert-issuer">Microsoft</div>
+                  <h5 class="cert-title" id="cert2Title">Microsoft Certified: Power BI Data Analyst (PL-300)</h5>
+                </div>
+              </div>
+              <p class="text-muted small" id="cert2Desc">
+                شهادة اعتماد رسمية في نمذجة البيانات المعقدة، بناء دوال DAX الحسابية، تطبيق أمان البيانات على مستوى الصفوف (RLS)، وإدارة خدمة Power BI.
+              </p>
+              <div class="cert-meta">
+                <span class="verified-badge"><i class="bi bi-patch-check-fill"></i> موثقة ومعتمدة</span>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card cert-card">
+              <div class="cert-header">
+                <div class="cert-icon">
+                  <i class="bi bi-building"></i>
+                </div>
+                <div>
+                  <div class="cert-issuer">IBM Skills Network</div>
+                  <h5 class="cert-title" id="cert3Title">IBM Data Analyst Professional Certificate</h5>
+                </div>
+              </div>
+              <p class="text-muted small" id="cert3Desc">
+                إتقان تطبيقات بايثون لتحليل البيانات ومكتبات Pandas و NumPy، والربط مع قواعد البيانات السحابية واستخراج التقارير التحليلية عبر Cognos.
+              </p>
+              <div class="cert-meta">
+                <span class="verified-badge"><i class="bi bi-patch-check-fill"></i> موثقة ومعتمدة</span>
+                <span>2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card cert-card">
+              <div class="cert-header">
+                <div class="cert-icon">
+                  <i class="bi bi-database-fill-gear"></i>
+                </div>
+                <div>
+                  <div class="cert-issuer">DataCamp / Udacity</div>
+                  <h5 class="cert-title" id="cert4Title">Advanced SQL for Data Scientists & Analysts</h5>
+                </div>
+              </div>
+              <p class="text-muted small" id="cert4Desc">
+                دورة متخصصة في دالات النوافذ (Window Functions)، التعبيرات الجدولية المشتركة (CTEs)، وتحسين أداء الاستعلامات واستعلامات البيانات الضخمة.
+              </p>
+              <div class="cert-meta">
+                <span class="verified-badge"><i class="bi bi-patch-check-fill"></i> موثقة ومعتمدة</span>
+                <span>2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card cert-card">
+              <div class="cert-header">
+                <div class="cert-icon">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <div>
+                  <div class="cert-issuer">Udemy / SuperDataScience</div>
+                  <h5 class="cert-title" id="cert5Title">Machine Learning & Data Science Bootcamp</h5>
+                </div>
+              </div>
+              <p class="text-muted small" id="cert5Desc">
+                معسكر برمجي تدريبي شامل يغطي خوارزميات الانحدار، التصنيف، معالجة اللغات الطبيعية البسيطة، والتقييم الإحصائي لنماذج الذكاء الاصطناعي.
+              </p>
+              <div class="cert-meta">
+                <span class="verified-badge"><i class="bi bi-patch-check-fill"></i> موثقة ومعتمدة</span>
+                <span>2023</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card cert-card">
+              <div class="cert-header">
+                <div class="cert-icon">
+                  <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                </div>
+                <div>
+                  <div class="cert-issuer">Corporate Finance Institute (CFI)</div>
+                  <h5 class="cert-title" id="cert6Title">Excel Business Intelligence & Financial Modeling</h5>
+                </div>
+              </div>
+              <p class="text-muted small" id="cert6Desc">
+                تطوير النماذج المالية والتحليل الإحصائي، وإتقان أدوات Power Query و Power Pivot لدمج وتنقية مئات الآلاف من الصفوف المحاسبية.
+              </p>
+              <div class="cert-meta">
+                <span class="verified-badge"><i class="bi bi-patch-check-fill"></i> موثقة ومعتمدة</span>
+                <span>2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Contact Section
+         ======================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <span class="badge-tag" id="contactBadge"><i class="bi bi-chat-left-dots-fill"></i> قنوات التواصل</span>
+          <h2 id="contactTitle">تواصل مع <span class="gradient-text">المهندس شوقي</span></h2>
+          <p class="subtitle" id="contactSubtitle">يسعدني دائماً استقبال استفساراتكم ومناقشة الفرص الوظيفية والمشاريع البحثية والعمل الحر</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Contact Info Column -->
+          <div class="col-lg-5">
+            <div class="glass-card contact-info-card">
+              <h4 class="fw-bold mb-4" id="directInfoTitle">معلومات الاتصال المباشرة</h4>
+
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-envelope-at-fill"></i>
+                </div>
+                <div>
+                  <div class="contact-label" id="cLabelEmail">البريد الإلكتروني المهني</div>
+                  <a href="mailto:your-email@example.com" class="contact-value">your-email@example.com</a>
+                </div>
+              </div>
+
+              <!-- Phone & WhatsApp -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div>
+                  <div class="contact-label" id="cLabelPhone">الهاتف / واتساب</div>
+                  <a href="tel:+20XXXXXXXXXX" class="contact-value" dir="ltr">+20 XX XXX XXXX</a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div>
+                  <div class="contact-label" id="cLabelLocation">الموقع والجاهزية</div>
+                  <span class="contact-value" id="cValLocation">المملكة العربية السعودية (متاح حضورياً وعن بُعد)</span>
+                </div>
+              </div>
+
+              <!-- Social Profiles Badges -->
+              <hr class="my-4 border-secondary opacity-25">
+              <h6 class="fw-bold mb-3" id="socialNetworksTitle">الملفات المهنية على الشبكات</h6>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-custom">
+                  <i class="bi bi-linkedin text-info me-1"></i> LinkedIn
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-custom">
+                  <i class="bi bi-github text-light me-1"></i> GitHub
+                </a>
+                <a href="https://kaggle.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-custom">
+                  <i class="bi bi-database-check text-info me-1"></i> Kaggle
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="col-lg-7">
+            <div class="glass-card p-4 p-md-5">
+              <h4 class="fw-bold mb-2" id="formHeaderTitle">أرسل رسالة مباشرة</h4>
+              <p class="text-muted small mb-4" id="formHeaderDesc">املأ الحقول التالية وسأقوم بالرد على استفسارك في أقرب وقت ممكن.</p>
+
+              <!-- Success Alert Message (Shown after submission) -->
+              <div class="alert alert-success d-none align-items-center gap-2" id="formSuccessAlert" role="alert">
+                <i class="bi bi-check-circle-fill fs-5"></i>
+                <div>
+                  <strong id="alertSuccessTitle">تم استلام رسالتك بنجاح!</strong>
+                  <span class="d-block small" id="alertSuccessText">شكراً لتواصلك، هذا النموذج تجريبي استعراضي وقد تمت المحاكاة بنجاح.</span>
+                </div>
+              </div>
+
+              <form id="portfolioContactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="senderName" class="form-label small fw-bold" id="fLabelName">الاسم الكامل <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-custom" id="senderName" placeholder="مثال: د. عبدالله السالم" required>
+                    <div class="invalid-feedback" id="valName">يرجى كتابة الاسم الكامل.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="senderEmail" class="form-label small fw-bold" id="fLabelEmail">البريد الإلكتروني <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control form-control-custom" id="senderEmail" placeholder="name@domain.com" required>
+                    <div class="invalid-feedback" id="valEmail">يرجى إدخال بريد إلكتروني صحيح.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="msgSubject" class="form-label small fw-bold" id="fLabelSubject">موضوع الرسالة <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-custom" id="msgSubject" placeholder="مثال: استفسار حول مشروع تحليل بيانات / فرصة وظيفية" required>
+                    <div class="invalid-feedback" id="valSubject">يرجى تحديد موضوع الرسالة.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="msgBody" class="form-label small fw-bold" id="fLabelMsg">نص الرسالة أو الاستفسار <span class="text-danger">*</span></label>
+                    <textarea class="form-control form-control-custom" id="msgBody" rows="4" placeholder="اكتب تفاصيل استفسارك أو طلبك هنا..." required></textarea>
+                    <div class="invalid-feedback" id="valMsg">يرجى كتابة نص الرسالة.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary-custom w-100 justify-content-center py-3" id="btnSubmitForm">
+                      <i class="bi bi-send-fill me-1"></i> إرسال الرسالة الآن
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Academic Assignment Disclaimer -->
+                <div class="assignment-disclaimer">
+                  <i class="bi bi-info-circle-fill fs-5 flex-shrink-0"></i>
+                  <span id="assignmentNotice">
+                    <strong>تنويه أكاديمي:</strong> هذا النموذج واجهة تفاعلية استعراضية تم تطويرها كمتطلب لمشروع مساق تطوير الويب، ولا يتصل بخادم حقيقي لقواعد البيانات.
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5 text-center text-lg-start">
+          <div class="footer-brand">
+            <h4 class="gradient-text mb-1" id="footerName">المهندس شوقي المير</h4>
+            <p class="text-muted small mb-3" id="footerBio">
+              متخصص في تحليل البيانات ونظم ذكاء الأعمال. تحويل الأرقام إلى قرارات تنفيذية رابحة من خلال النمذجة الإحصائية والتصور البياني الحديث.
+            </p>
+          </div>
+          <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://kaggle.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Kaggle"><i class="bi bi-database-check"></i></a>
+            <a href="mailto:your-email@example.com" class="social-icon" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-7 text-center text-lg-end">
+          <ul class="d-inline-flex flex-wrap justify-content-center justify-content-lg-end gap-3 list-unstyled mb-3">
+            <li><a href="#home" class="text-decoration-none text-muted" id="fLinkHome">الرئيسية</a></li>
+            <li><a href="#about" class="text-decoration-none text-muted" id="fLinkAbout">من أنا</a></li>
+            <li><a href="#education" class="text-decoration-none text-muted" id="fLinkEdu">التعليم</a></li>
+            <li><a href="#skills" class="text-decoration-none text-muted" id="fLinkSkills">المهارات</a></li>
+            <li><a href="#projects" class="text-decoration-none text-muted" id="fLinkProjects">المشاريع</a></li>
+            <li><a href="#certificates" class="text-decoration-none text-muted" id="fLinkCerts">الشهادات</a></li>
+            <li><a href="#contact" class="text-decoration-none text-muted" id="fLinkContact">اتصل بي</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p class="mb-0" id="footerCopy">
+          &copy; 2026 <strong>المهندس شوقي المير</strong>. جميع الحقوق محفوظة. صُمم وطُوّر كمتطلب عملي لمساق تطوير تطبيقات الويب.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" title="العودة للأعلى" aria-label="العودة للأعلى">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- ========================================================================
+       Modals for Project Details
+       ======================================================================== -->
+
+  <!-- Modal 1: Sales Dashboard -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="modal1Label"><i class="bi bi-bar-chart-line text-info me-2"></i> لوحة تحكم أداء المبيعات وسلوك العملاء</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/project1.jpg" alt="لوحة المبيعات" class="img-fluid rounded-4 mb-3 border border-secondary">
+          <h6 class="fw-bold text-info mb-2">نظرة عامة على المشروع والأهداف:</h6>
+          <p class="text-muted small">
+            تم تصميم هذا المشروع لصالح شركة تجزئة متعددة الفروع لتحليل أكثر من 50,000 عملية بيع سنوية، ومراقبة مؤشرات الأداء الحيوية (Total Revenue, YoY Growth, Average Order Value). كما يوفر تحليلاً قطاعياً لقيمة العميل الدائمة (CLV) وتحديد أفضل ممثلي المبيعات أداءً.
+          </p>
+          <div class="row g-2 my-2">
+            <div class="col-sm-6">
+              <div class="p-2 border border-secondary rounded-3 bg-dark-subtle">
+                <small class="text-muted d-block">إجمالي المبيعات المحللة:</small>
+                <strong class="text-info fs-5">$1.89M</strong>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-2 border border-secondary rounded-3 bg-dark-subtle">
+                <small class="text-muted d-block">النمو السنوي المحقق (YoY):</small>
+                <strong class="text-success fs-5">+12.5%</strong>
+              </div>
+            </div>
+          </div>
+          <h6 class="fw-bold text-info mt-3 mb-2">الأدوات والتقنيات المستخدمة:</h6>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-info-subtle text-info">Microsoft Power BI</span>
+            <span class="badge bg-primary-subtle text-primary">DAX Calculations</span>
+            <span class="badge bg-secondary-subtle text-secondary-emphasis">PostgreSQL</span>
+            <span class="badge bg-success-subtle text-success">Star Schema Modeling</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary rounded-pill px-3" data-bs-dismiss="modal">إغلاق</button>
+          <a href="https://github.com/shawqi-almeer/sales-bi-dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom rounded-pill">
+            <i class="bi bi-github me-1"></i> زيارة المستودع
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Customer Churn Model -->
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="modal2Label"><i class="bi bi-cpu text-info me-2"></i> نموذج التنبؤ بتسرب العملاء وخفض الفقد</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/project2.jpg" alt="نموذج تسرب العملاء" class="img-fluid rounded-4 mb-3 border border-secondary">
+          <h6 class="fw-bold text-info mb-2">المنهجية العلمية ونتائج النموذج:</h6>
+          <p class="text-muted small">
+            تم تطبيق دورة حياة علم البيانات الكاملة بدءاً من تنظيف البيانات والتعامل مع القيم المفقودة، مروراً بهندسة الميزات (Feature Engineering) وترميز المتغيرات الفئوية، وصولاً إلى تدريب خوارزميات التصنيف (Random Forest و XGBoost) ومقارنة مصفوفة الارتباك (Confusion Matrix).
+          </p>
+          <div class="row g-2 my-2">
+            <div class="col-sm-4">
+              <div class="p-2 border border-secondary rounded-3 bg-dark-subtle text-center">
+                <small class="text-muted d-block">دقة النموذج (Accuracy):</small>
+                <strong class="text-info fs-5">88.6%</strong>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="p-2 border border-secondary rounded-3 bg-dark-subtle text-center">
+                <small class="text-muted d-block">حساسية الاستدعاء (Recall):</small>
+                <strong class="text-success fs-5">89.4%</strong>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="p-2 border border-secondary rounded-3 bg-dark-subtle text-center">
+                <small class="text-muted d-block">مساحة المنحنى (AUC-ROC):</small>
+                <strong class="text-warning fs-5">0.942</strong>
+              </div>
+            </div>
+          </div>
+          <h6 class="fw-bold text-info mt-3 mb-2">الأدوات والتقنيات المستخدمة:</h6>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-info-subtle text-info">Python 3.11</span>
+            <span class="badge bg-success-subtle text-success">Scikit-learn</span>
+            <span class="badge bg-warning-subtle text-warning">XGBoost Classifier</span>
+            <span class="badge bg-primary-subtle text-primary">Pandas & NumPy</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary rounded-pill px-3" data-bs-dismiss="modal">إغلاق</button>
+          <a href="https://github.com/shawqi-almeer/customer-churn-ml" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom rounded-pill">
+            <i class="bi bi-github me-1"></i> زيارة المستودع
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Healthcare EDA -->
+  <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="modal3Label"><i class="bi bi-heart-pulse text-info me-2"></i> التحليل الإحصائي والاستكشافي للبيانات الصحية</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/project3.jpg" alt="تحليل البيانات الصحية" class="img-fluid rounded-4 mb-3 border border-secondary">
+          <h6 class="fw-bold text-info mb-2">أبرز الاستنتاجات الإحصائية:</h6>
+          <p class="text-muted small">
+            دراسة وبائية استقصائية استخدمت تحليل الانحدار الإحصائي والتمثيل الجغرافي المكاني لاكتشاف الارتباط القوي بين نسب التطعيم ومعدل انخفاض التنويم السريري، بالإضافة إلى التنبؤ بالسلاسل الزمنية لمسار تفشي الأوبئة الموسمية.
+          </p>
+          <div class="row g-2 my-2">
+            <div class="col-sm-6">
+              <div class="p-2 border border-secondary rounded-3 bg-dark-subtle">
+                <small class="text-muted d-block">حجم العينة المدروسة:</small>
+                <strong class="text-info fs-5">+1,245,000 سجل</strong>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-2 border border-secondary rounded-3 bg-dark-subtle">
+                <small class="text-muted d-block">معدل التعافي المحسوب:</small>
+                <strong class="text-success fs-5">97.4%</strong>
+              </div>
+            </div>
+          </div>
+          <h6 class="fw-bold text-info mt-3 mb-2">الأدوات والتقنيات المستخدمة:</h6>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-primary-subtle text-primary">Python</span>
+            <span class="badge bg-info-subtle text-info">Seaborn & Matplotlib</span>
+            <span class="badge bg-secondary-subtle text-secondary-emphasis">Statsmodels (ARIMA)</span>
+            <span class="badge bg-success-subtle text-success">Geopandas</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary rounded-pill px-3" data-bs-dismiss="modal">إغلاق</button>
+          <a href="https://github.com/shawqi-almeer/healthcare-eda-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom rounded-pill">
+            <i class="bi bi-github me-1"></i> زيارة المستودع
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Clean, Lightweight Vanilla JS for Interactivity -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      // 1. Navbar Scroll Effect
+      const navbar = document.getElementById('mainNavbar');
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // 2. Back to Top Button
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 400) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      });
+      backToTopBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // 3. Theme Toggle (Dark / Light Mode)
+      const themeToggleBtn = document.getElementById('themeToggleBtn');
+      const themeIcon = document.getElementById('themeIcon');
+      
+      themeToggleBtn.addEventListener('click', function () {
+        const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-bs-theme', newTheme);
+        
+        if (newTheme === 'dark') {
+          themeIcon.className = 'bi bi-sun-fill';
+          themeToggleBtn.title = 'تبديل المظهر الفاتح';
+        } else {
+          themeIcon.className = 'bi bi-moon-stars-fill';
+          themeToggleBtn.title = 'تبديل المظهر الداكن';
+        }
+      });
+
+      // 4. Project Filtering
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projectItems = document.querySelectorAll('.project-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+
+          const filterValue = this.getAttribute('data-filter');
+
+          projectItems.forEach(item => {
+            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 5. Contact Form Simulation (Front-End Only Demonstration)
+      const contactForm = document.getElementById('portfolioContactForm');
+      const successAlert = document.getElementById('formSuccessAlert');
+
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        
+        if (!contactForm.checkValidity()) {
+          e.stopPropagation();
+          contactForm.classList.add('was-validated');
+          return;
+        }
+
+        // Show realistic loading state
+        const submitBtn = document.getElementById('btnSubmitForm');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> جارٍ المعالجة...';
+        submitBtn.disabled = true;
+
+        setTimeout(() => {
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          successAlert.classList.remove('d-none');
+          successAlert.classList.add('d-flex');
+          contactForm.reset();
+          contactForm.classList.remove('was-validated');
+
+          // Auto-hide alert after 7 seconds
+          setTimeout(() => {
+            successAlert.classList.add('d-none');
+            successAlert.classList.remove('d-flex');
+          }, 7000);
+        }, 1200);
+      });
+
+      // 6. Complete Bilingual Support (Arabic RTL / English LTR Toggle)
+      const langToggleBtn = document.getElementById('langToggleBtn');
+      const langText = document.getElementById('langText');
+      const bootstrapCss = document.getElementById('bootstrap-css');
+      let currentLang = 'ar';
+
+      const translations = {
+        en: {
+          brandTitle: "Eng. Shawqi Al-Meer",
+          brandSubtitle: "Data Analysis & BI",
+          linkHome: '<i class="bi bi-house-door me-1"></i> Home',
+          linkAbout: '<i class="bi bi-person me-1"></i> About Me',
+          linkEdu: '<i class="bi bi-mortarboard me-1"></i> Education',
+          linkSkills: '<i class="bi bi-tools me-1"></i> Skills',
+          linkProjects: '<i class="bi bi-folder-check me-1"></i> Projects',
+          linkCerts: '<i class="bi bi-patch-check me-1"></i> Certifications',
+          linkContact: '<i class="bi bi-envelope me-1"></i> Contact',
+          navCta: '<i class="bi bi-send-fill"></i> Get in Touch',
+          
+          heroStatusText: "Available for Academic Opportunities, Research & Freelance",
+          heroWelcome: "Hello, I am",
+          heroName: "Eng. Shawqi Al-Meer",
+          heroJobTitle: "Data Analyst & Business Intelligence Specialist",
+          heroDescription: "Passionate university student specializing in Computer Science & Data Analytics. Dedicated to transforming raw and complex data into actionable strategic insights and interactive dashboards that empower corporate decisions.",
+          btnViewProjects: '<i class="bi bi-grid-fill"></i> View My Projects',
+          btnDownloadCv: '<i class="bi bi-file-earmark-arrow-down-fill text-info"></i> Download CV (Resume)',
+          socialsLabel: "Connect with me:",
+          badgeExpText: "Completed Analytical Projects",
+          badgeSpecText: "Data Analytics & Business Intelligence",
+          
+          aboutBadge: '<i class="bi bi-person-badge"></i> Professional Bio',
+          aboutTitle: 'Who is <span class="gradient-text">Eng. Shawqi Al-Meer</span>?',
+          aboutSubtitle: "Deep passion for numbers, unlocking insights to guide executive and operational success",
+          aboutQuoteText: '"Data without analysis is just noise, and analysis without visual storytelling fails to inspire real action."',
+          aboutP1: 'I am <strong>Shawqi Al-Meer</strong>, a senior computer science and information systems student with an intensive specialization in <strong>Data Analytics and Business Intelligence (BI)</strong>. I combine rigorous theoretical foundations with hands-on proficiency in modern analytics tools such as Python, SQL, Power BI, and Tableau.',
+          aboutP2: 'Throughout my academic journey, I have developed predictive models solving tangible challenges: customer churn forecasting, market basket association mining, and executive KPI reporting systems.',
+          infoMajorLabel: "Major:",
+          infoMajorVal: "Data Analytics & Information Systems",
+          infoDegreeLabel: "Degree:",
+          infoDegreeVal: "Bachelor of Science (Senior)",
+          infoStatusLabel: "Status:",
+          infoStatusVal: "Available for Hire & Internships",
+          statProjects: "Completed Projects",
+          statYears: "Years of Study & Hands-on",
+          statCerts: "Certified Credentials",
+          statGpa: "Cumulative GPA / 4.0",
+          
+          eduBadge: '<i class="bi bi-mortarboard-fill"></i> Academic Journey',
+          eduTitle: 'Education & <span class="gradient-text">Qualifications</span>',
+          eduSubtitle: "Exemplary academic track record rooted in Computer Science, Statistics, and AI",
+          edu1Period: "2022 - 2026 (Expected Graduation)",
+          edu1Gpa: "GPA: 3.88 / 4.00 (First Class Honors)",
+          edu1Degree: "B.Sc. in Computer Science - Data Analytics & AI Track",
+          edu1School: "College of Computer Science & Information Technology",
+          edu1Desc: "Comprehensive study covering Data Mining, Advanced Algorithms, Relational & NoSQL Database Management, Machine Learning, Statistical Inference, and Business Intelligence.",
+          edu1Course1: "Data Mining & Knowledge Discovery",
+          edu1Course2: "Data Warehousing & BI",
+          edu1Course3: "Applied Statistics & Regression",
+          edu1Course4: "Advanced Database Engineering",
+          edu2Period: "2019 - 2022",
+          edu2Gpa: "Grade: 98.5% (High Honors)",
+          edu2Degree: "High School Diploma - Scientific & Mathematical Track",
+          edu2School: "Excellence Secondary High School",
+          edu2Desc: "Graduated with distinction focusing on advanced mathematics and computer programming with awards in regional mathematical Olympiads.",
+          
+          skillsBadge: '<i class="bi bi-cpu-fill"></i> Technical Abilities',
+          skillsTitle: 'Skills & <span class="gradient-text">Competencies</span>',
+          skillsSubtitle: "A cohesive toolkit of programming languages, analytical frameworks, and executive soft skills",
+          skillCat1Title: "Programming & Query Languages",
+          skillCat2Title: "BI & Data Visualization Tools",
+          skillCat3Title: "Machine Learning & Predictive Modeling",
+          skillCat4Title: "Soft Skills & Analytical Mindset",
+          softSkillsDesc: "Interpersonal communication and leadership skills enabling effective storytelling to executive stakeholders:",
+          ss1: "Data Storytelling & Executive Presentations",
+          ss2: "Advanced Critical Thinking & Analysis",
+          ss3: "Teamwork & Agile Development",
+          ss4: "Aligning Insights with Business KPIs",
+          ss5: "Effective Cross-functional Communication",
+          ss6: "Time Management & Timely Delivery",
+          
+          projBadge: '<i class="bi bi-kanban-fill"></i> Project Showcase',
+          projTitle: 'Featured <span class="gradient-text">Projects & Work</span>',
+          projSubtitle: "Hands-on projects simulating real-world data discovery, modeling, and dashboarding",
+          filterAll: "All Projects",
+          filterDashboards: "Dashboards",
+          filterMl: "Machine Learning",
+          filterEda: "Exploratory EDA",
+          
+          p1CategoryTag: "Intelligent Dashboard",
+          p1Title: "Executive Sales Performance & Customer Analytics Dashboard",
+          p1Desc: "Comprehensive Power BI and SQL dashboard tracking $1.89M annual revenue, Customer Lifetime Value (CLV), YoY growth trends, and regional sales distribution.",
+          p1BtnModal: '<i class="bi bi-info-circle me-1"></i> Project Details',
+          
+          p2CategoryTag: "Predictive ML Model",
+          p2Title: "Customer Churn Prediction & Retention Machine Learning Model",
+          p2Desc: "End-to-end Python machine learning pipeline (XGBoost) achieving 88.6% accuracy in predicting customer churn and isolating top retention drivers.",
+          p2BtnModal: '<i class="bi bi-info-circle me-1"></i> Project Details',
+          
+          p3CategoryTag: "Statistical EDA",
+          p3Title: "Epidemiological & Healthcare Clinical Data Science Dashboard",
+          p3Desc: "Exploratory statistical study of 1.2M+ healthcare records visualizing vaccination correlations, hospital burden, and time-series forecasting.",
+          p3BtnModal: '<i class="bi bi-info-circle me-1"></i> Project Details',
+          
+          certsBadge: '<i class="bi bi-award-fill"></i> Career Growth',
+          certsTitle: 'Courses & <span class="gradient-text">Certifications</span>',
+          certsSubtitle: "Accredited credentials from leading international tech organizations and universities",
+          
+          contactBadge: '<i class="bi bi-chat-left-dots-fill"></i> Get In Touch',
+          contactTitle: 'Contact <span class="gradient-text">Eng. Shawqi</span>',
+          contactSubtitle: "Always welcoming inquiries regarding career opportunities, academic research, and freelance analytics projects",
+          directInfoTitle: "Direct Contact Channels",
+          cLabelEmail: "Professional Email",
+          cLabelPhone: "Phone & WhatsApp",
+          cLabelLocation: "Location & Availability",
+          cValLocation: "Update your location (Remote / On-site)",
+          socialNetworksTitle: "Professional Networks",
+          formHeaderTitle: "Send a Direct Message",
+          formHeaderDesc: "Please fill out the form below and I will respond to your inquiry promptly.",
+          alertSuccessTitle: "Message Received Successfully!",
+          alertSuccessText: "Thank you for reaching out. This assignment form is a demonstration interface and simulated your submission successfully.",
+          fLabelName: "Full Name *",
+          fLabelEmail: "Email Address *",
+          fLabelSubject: "Subject *",
+          fLabelMsg: "Your Message *",
+          btnSubmitForm: '<i class="bi bi-send-fill me-1"></i> Send Message Now',
+          assignmentNotice: "<strong>Academic Note:</strong> This form is an interactive front-end demonstration developed for a Web Development university assignment and does not connect to a live backend database.",
+          
+          footerName: "Eng. Shawqi Al-Meer",
+          footerBio: "Specialist in Data Analytics and Business Intelligence. Empowering data-backed decisions through statistical modeling and modern visual dashboards.",
+          fLinkHome: "Home",
+          fLinkAbout: "About Me",
+          fLinkEdu: "Education",
+          fLinkSkills: "Skills",
+          fLinkProjects: "Projects",
+          fLinkCerts: "Certifications",
+          fLinkContact: "Contact",
+          footerCopy: "&copy; 2026 <strong>Eng. Shawqi Al-Meer</strong>. All Rights Reserved. Built as a practical university Web Development assignment."
+        }
+      };
+
+      // Save initial Arabic texts
+      const arTexts = {};
+      for (let key in translations.en) {
+        const el = document.getElementById(key);
+        if (el) {
+          arTexts[key] = el.innerHTML;
+        }
+      }
+
+      langToggleBtn.addEventListener('click', function () {
+        if (currentLang === 'ar') {
+          // Switch to English
+          document.documentElement.setAttribute('dir', 'ltr');
+          document.documentElement.setAttribute('lang', 'en');
+          bootstrapCss.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
+          langText.innerText = 'عربي';
+          langToggleBtn.title = 'التبديل إلى العربية';
+
+          for (let key in translations.en) {
+            const el = document.getElementById(key);
+            if (el) {
+              el.innerHTML = translations.en[key];
+            }
+          }
+          currentLang = 'en';
+        } else {
+          // Switch back to Arabic
+          document.documentElement.setAttribute('dir', 'rtl');
+          document.documentElement.setAttribute('lang', 'ar');
+          bootstrapCss.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css";
+          langText.innerText = 'EN';
+          langToggleBtn.title = 'Switch to English';
+
+          for (let key in arTexts) {
+            const el = document.getElementById(key);
+            if (el) {
+              el.innerHTML = arTexts[key];
+            }
+          }
+          currentLang = 'ar';
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>
